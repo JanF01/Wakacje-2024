@@ -1,0 +1,295 @@
+body{
+	margin:0 auto;
+}
+a{
+	display:block;
+	width:100%;
+	height:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	color:black;
+	position:relative;
+}
+a:hover{
+	color:black;
+}
+.up{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background:white;
+	z-index:20;
+	box-shadow:0em 0em 0.55em -0.25em rgb(4, 21, 117);
+}
+nav{
+
+	height:3.3em;
+	font-family:'Montserrat';
+	font-size:0.9em;
+	
+}
+.abs{
+  position:absolute;
+  width:2.5em;
+  left:1.5em;
+  top:0.25em;
+}
+
+nav>ul{
+   display:flex;
+	list-style-type:none;
+	max-width:98%;
+	margin-right:2%;
+	height:100%;
+	justify-content:center;
+}
+nav>ul>li{
+	flex:1;
+	cursor:pointer;
+}
+.nm{
+	display:none;
+}
+.mobilek{
+	z-index:1;
+	display:none;
+	background:rgb(215, 245, 255);
+}
+.mobileul{
+	list-style-type:none;
+	display:none;
+	flex-direction:column;
+	height:6.6em;
+	width:120%;
+	margin:0;
+	background:rgb(215, 245, 255);
+	box-shadow:0.1em 0.2em 0.4em -0.3em black;
+
+}
+.mobileul>li{
+
+	height:50%;
+}
+.mobileul>li:hover{
+	background:rgb(184, 235, 252);
+}
+a>.above{
+	background-color:rgb(2, 19, 168);
+	min-height:0.2em;
+	position:absolute;
+	top:2.55em;
+	width:0em;
+	transition:all 0.3s;
+} 
+.current{
+	min-width:90%;
+}
+.header{
+	margin-top:3.3em;
+height:12em;
+}
+.logo{
+	z-index:0;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+font-family:"Righteous";
+font-size:1.5em;
+}
+
+.logo>a>img{
+	z-index:0;
+   height:80%;
+}
+
+main{
+min-height:100vh;
+margin-top:2em;
+}
+section{
+min-height:100%;
+padding-left:1em;
+border-radius:0.4em;
+}
+h1{
+
+  font-family:"Montserrat";
+  font-size:1.5em;
+  padding:0.3em 0em 0.3em 0.5em;
+  /* background:linear-gradient(to right,rgb(119, 188, 253),rgb(255, 255, 255)); */
+  background:rgb(119, 188, 253);
+
+}
+h3{
+	/* background:linear-gradient(to right,rgb(119, 188, 253),rgb(255, 255, 255)); */
+	background:rgb(119, 188, 253);
+	font-family:"Montserrat";
+	font-size:0.8em;
+	font-weight:bold;
+	padding:0 0 0.7em 1.2em;
+
+	margin-top:-1em;
+}
+p{
+  font-family:"Montserrat";
+
+  margin-top:1.5em;
+  padding:0.2em 3.5% 0.2em 3%;
+  text-align:justify;
+  font-size:0.95em;
+
+}
+p>img{
+  width:50%;
+  margin:1% 2.5% 1% 2.5%;
+  box-shadow:0.3em 0.3em 0.15em -0.1em rgb(143, 143, 143);
+}
+.mapa{
+margin-top:1.5em;
+}
+
+
+.i{
+width:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:5% 0% 5% 0%;
+
+}
+.arrow{
+  width:12%;
+  transition:all 0.3s;
+  cursor:pointer
+}
+.arrow:nth-child(3){
+	transform:rotate(180deg) scale(1);
+
+}
+.arrow:hover{
+	width:10%;
+}
+
+
+
+footer{
+	margin-top:3em;
+ height:8em;
+ font-family:"Montserrat";
+ font-size:0.85em;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+color:rgb(95, 95, 95);
+
+}
+
+
+
+
+
+
+
+
+aside{
+	min-height:100%;
+
+	border-radius:0.4em;
+}
+aside>.links{
+ height:2.4em;
+ font-size:1.2em;
+ margin:0em 0 1em 0;
+ color:white;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-weight:bold;
+ cursor:pointer;
+ transition: all 0.3s;
+}
+.links:hover{
+	transform:scale(0.9);
+	
+}
+.fb{
+	background:#4267b2;
+	font-family:Segoe UI;
+
+}
+.tw{
+  font-family:Helvetica;
+  background:#38A1F3;
+}
+.gt{
+	font-family:"Open Sans";
+	font-weight:800;
+	background:rgb(70, 70, 70);
+  }
+  .ja>img{
+    width:80%;
+	border-radius:50%;
+	border:0.45em rgb(70, 70, 70) solid;
+  }
+  .ja{
+   display:flex;
+   justify-content:center;
+   padding-top:2em;
+  }
+
+  @media only screen and (max-width:9000px){
+	aside{
+	max-width:15%;
+	margin-left:1.5%;
+	}
+	.mobilek{
+		display:none;
+	   }
+	   .nm{
+		display:block;
+	}
+  }
+
+  @media only screen and (max-width:1223px){
+	
+	
+	.links{
+	  font-size:1.1em !important;
+	}
+	body{
+    font-size:0.9em;
+
+	}
+
+  }
+  @media only screen and (max-width:1023px){
+	
+	aside{
+	  max-width:80%;
+	  margin-left:10%;
+	  margin-top:4em;
+	}
+	aside>.ja{
+   display:none;
+	}
+	.mobilek{
+		display:block;
+	   }
+	   .nm{
+		display:none;
+	}
+	.abs{
+		display:none;
+	}
+  }
+  @media only screen and (max-width:700px){
+    section{
+     padding:0;
+
+	}
+  }
+  
