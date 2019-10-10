@@ -260,10 +260,10 @@ aside>.links{
 	.links{
 	  font-size:1.1em !important;
 	}
-	body{
-    font-size:0.9em;
+	
+   
 
-	}
+
 
   }
   @media only screen and (max-width:1023px){
@@ -285,11 +285,17 @@ aside>.links{
 	.abs{
 		display:none;
 	}
+	  section{
+		  padding:0;
+		 } 
+	  body{
+		  font-size:1.4em
+		 } 
   }
-  @media only screen and (max-width:700px){
-    section{
-     padding:0;
 
-	}
-  }
+    
+    
+
+	
+
   
