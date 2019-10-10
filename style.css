@@ -261,7 +261,9 @@ aside>.links{
 	  font-size:1.1em !important;
 	}
 	
-   
+   body{
+	   font-size:1.5em
+	  } 
 
 
 
@@ -289,7 +291,7 @@ aside>.links{
 		  padding:0;
 		 } 
 	  body{
-		  font-size:1.4em
+		  font-size:1.7em;
 		 } 
   }
 
